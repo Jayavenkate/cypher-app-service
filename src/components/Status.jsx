@@ -57,7 +57,7 @@ const Status = () => {
                                 <h3>Todo{todo.length}</h3>
                                 <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
                                     {todo.map((tododata) => (
-                                        <Card key={tododata.key} sx={{ width: "250px", padding: "10px" }}>
+                                        <Card key={tododata.id} sx={{ width: "250px", padding: "10px" }}>
                                             <h4>{tododata.id}</h4>
                                             <h4 style={{ width: "200px" }}>{tododata.title}</h4>
                                         </Card>
@@ -72,7 +72,7 @@ const Status = () => {
                                 <h3>Inpogress{inpogress.length}</h3>
                                 <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
                                     {inpogress.map((tododata) => (
-                                        <Card key={tododata.key} sx={{ width: "250px", padding: "10px" }}>
+                                        <Card key={tododata.id} sx={{ width: "250px", padding: "10px" }}>
                                             <h4>{tododata.id}</h4>
                                             <h4>{tododata.title}</h4>
                                         </Card>
